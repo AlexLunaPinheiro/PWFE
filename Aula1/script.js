@@ -32,7 +32,7 @@ if (b == true){
     alert("eu tambem te amo")
 }
 else{
-    alert("Vai toma no cu piranha")
+    alert("Vai *********")
 }
 */
 
