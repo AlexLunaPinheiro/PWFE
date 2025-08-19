@@ -1,16 +1,25 @@
 const botao = document.querySelector('#botao');
-let texto = document.querySelector('texto');
+let textos = document.querySelector(".textos");
 
-function random(num){
+let i = 0;
+const palavras = ["oi", "tchau", "obrigado", "eu te amo", "coraçãozinho", "amo voce", "aula boa", "dedos!!!"];
+
+function random(num) {
     return Math.floor(Math.random() * (num + 1));
-};
-
-botao.onclick = function(){
-    while (true){
-    let cor =
-    "rgb(" + random(255) + "," + random(255) + "," + random(255) +")";
-    document.body.style.backgroundColor = cor;
-    setTimeout(2000)
-    }
-    
 }
+
+function bgChange(event) {
+    let cor = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+    event.target.style.backgroundColor = cor;
+
+    if (i < palavras.length) {
+        let texto = document.createElement("h1");
+        texto.textContent = palavras[i];
+        textos.appendChild(texto);
+        i++;
+    } else {
+        i = 0;
+    }
+}
+
+botao.addEventListener("click", bgChange);

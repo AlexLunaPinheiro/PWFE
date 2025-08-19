@@ -1,17 +1,22 @@
-const cartela = document.getElementById("cartela");
-const botaoGerarCartela = document.getElementById("botaoGerarCartela");
-let matriz = [0][0];
-let aleatorio;
+const numerosSorteados = document.querySelector(".numerosSorteados");
+const botao = document.getElementById("popular")
 
-botaoGerarCartela.addEventListener('click',()=>{
-    for (let i = 0;i<9;i++){
-        for (let j = 0; j<9;j++){
-            aleatorio = Math.random(1,75);
-            if(aleatorio in matriz){
-                matriz[i][j] = aleatorio;
-            }
-        }
+numeros =[];
+
+botao.addEventListener('click',()=>{
+
+    let randomico = Math.random(1,75)
+    if (15<=randomico>=1){
         
     }
-    console.log(matriz)
+
+   
+        let novoElemento = document.createElement("h1");
+        novoElemento.textContent = randomico;
+        numerosSorteados.append(novoElemento)
+    
 })
+
+
+
+console.log(numeros)
