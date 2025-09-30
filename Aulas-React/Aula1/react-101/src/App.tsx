@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <main>
-      <section className="Profile-container">
+      <section className="profile-container">
         <Profile></Profile>
       </section>
     </main>

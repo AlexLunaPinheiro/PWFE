@@ -14,7 +14,7 @@ main{
   justify-content: center;
 }
 
-.Profile-container{
+.profile-container{
   width: 300px;
   box-shadow: 0px 7px 5px 4px rgba(209,209,209,0.75);
   -webkit-box-shadow: 0px 7px 5px 4px rgba(209,209,209,0.75);
